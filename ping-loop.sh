@@ -10,16 +10,11 @@ fi
 
 function pingloopp() {
 echo "OK $(date)">>pings.log
-httping -c 1 m.youtube.com
-httping -c 1 m.facebook.com
-httping -c 1 github.com
 httping -c 1 www.google.co.id
-httping -c 1 instagram.com
 }
 function loop() {
 while true; do
     pingloopp
-    sleep 1
   done
 }
 function run() {
