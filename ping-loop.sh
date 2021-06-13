@@ -9,7 +9,6 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 function pingloopp() {
-echo "OK $(date)">>pings.log
 httping -c 1 www.google.co.id
 }
 function loop() {
